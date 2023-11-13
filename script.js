@@ -3,13 +3,14 @@ const outpu = document.getElementById("output");
 function pro() {
   return new Promise((res, rej) => {
     if (true) {
-      setTimeOut(() => {
+      setTimeout(() => {
         res("Hello, world!");
       }, 1000);
     }
   });
 }
-outpu.innerText = pro()
+
+const her = pro()
   .then((data) => {
     return data;
   })
